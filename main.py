@@ -6,5 +6,5 @@ def digit_sum(n):
     return n%10+digit_sum((n/10)-(n%10*.1))
 
 n = int(input("Enter an int: "))
-s = digit_sum(n)
+s = int(digit_sum(n))
 print(f"sum of digits of {n} is {s}.")
